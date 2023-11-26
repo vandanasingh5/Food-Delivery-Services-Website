@@ -363,7 +363,7 @@ body{
 /* mobile view */
 @media screen and (max-width:640px) {
     .sidebar {
-        display: flex;
+        display: none;
     }
 
     .main {
@@ -371,7 +371,7 @@ body{
     }
 
     .menu-toggle{
-        display: flex;
+        display: block;
         text-decoration: none;
         font-size: 20px;
         background-color: var(--whiteColor);
@@ -383,6 +383,7 @@ body{
         height: 40px;
         border-radius: 50%;
         z-index: 3;
+        
     }
 
     .sidebar.active {
