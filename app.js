@@ -1,6 +1,6 @@
 // showing navbar when click menu on mobile view
-const mobile = document.querySelector('.menu-toggle');
-const mobileLink = document.querySelector('.sidebar');
+const mobile = document.querySelector(".menu-toggle");
+const mobileLink = document.querySelector(".sidebar");
 
 mobile.addEventListener("click", function(){
     mobile.classList.toggle("is-active");
@@ -9,7 +9,7 @@ mobile.addEventListener("click", function(){
 
 // close menu when click
 mobileLink.addEventListener("click", function(){
-    const menuBars = document.querySelector(".is-active");
+    const menuBars = document.querySelector("is-active");
     if(window.innerWidth<=768 && menuBars){
         mobile.classList.toggle("is-active");
         mobileLink.classList.toggle("active");
@@ -46,6 +46,6 @@ $(".back-menus").bind("click", function(e){
 $(".next-menus").bind("click", function(e){
     e.preventDefault();
     $(".filter-wrapper").animate({
-        screenLeft: "+=" + stepFilter + "px"
+        scrollLeft: "+=" + stepFilter + "px"
     })
 });
